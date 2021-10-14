@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/conc"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       tools:listitem="@layout/list"
+       android:id="@+id/res_V"
+       app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:background="@drawable/images"
+    app:layout_constraintBottom_toBottomOf="@+id/conc"
+    android:layout_height="wrap_content">
+<LinearLayout
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:orientation="vertical"
+    android:layout_marginStart="166dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+   <EditText
+       android:textSize="22dp"
+       android:id="@+id/strana"
+       android:textColorHint="@color/black"
+       android:textColorLink="@color/black"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+      android:hint="Country"
+      android:textColor="@color/black"/>
+
+   <EditText
+       android:textSize="22dp"
+       android:textColorHint="@color/black"
+
+       android:textColorLink="@color/black"
+       android:id="@+id/turu"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:hint="news"
+       android:textColor="@color/black"/>
+   <Button
+       android:textSize="22dp"
+       android:textColor="@color/black"
+       android:text="поиск"
+       android:id="@+id/btnpoisk"
+       android:onClick="onclik"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
